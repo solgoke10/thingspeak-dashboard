@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ThingSpeak Dashboard - All Fields</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 20px;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    h2 {
+      margin-top: 40px;
+      color: #34495e;
+    }
+    iframe {
+      border: 2px solid #2c3e50;
+      border-radius: 8px;
+      margin: 20px auto;
+      display: block;
+    }
+    .api-links {
+      margin-top: 50px;
+    }
+    .api-links a {
+      display: block;
+      margin: 8px 0;
+      color: #2980b9;
+      text-decoration: none;
+    }
+    .api-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ThingSpeak Dashboard - Live Data</h1>
+
+  <h2>Field 1</h2>
+  <iframe width="600" height="400" src="https://thingspeak.com/channels/2897311/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&results=60"></iframe>
+
+  <h2>Field 2</h2>
+  <iframe width="600" height="400" src="https://thingspeak.com/channels/2897311/charts/2?bgcolor=%23ffffff&color=%232ecc71&dynamic=true&type=line&results=60"></iframe>
+
+  <h2>Field 3</h2>
+  <iframe width="600" height="400" src="https://thingspeak.com/channels/2897311/charts/3?bgcolor=%23ffffff&color=%233498db&dynamic=true&type=line&results=60"></iframe>
+
+  <h2>Field 4</h2>
+  <iframe width="600" height="400" src="https://thingspeak.com/channels/2897311/charts/4?bgcolor=%23ffffff&color=%23f39c12&dynamic=true&type=line&results=60"></iframe>
+
+  <div class="api-links">
+    <h3>API Links</h3>
+    <a href="https://api.thingspeak.com/update?api_key=BX73JN2S3LOYP0IH&field1=0" target="_blank">Write a Channel Feed</a>
+    <a href="https://api.thingspeak.com/channels/2897311/feeds.json?results=2" target="_blank">Read a Channel Feed</a>
+    <a href="https://api.thingspeak.com/channels/2897311/fields/1.json?results=2" target="_blank">Read Field 1</a>
+    <a href="https://api.thingspeak.com/channels/2897311/status.json" target="_blank">Read Channel Status Updates</a>
+  </div>
+
+</body>
+</html>
